@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Linux.do User Blocker",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": [{
+    "matches": ["https://linux.do/*"],
+    "js": ["content.js"],
+    "css": ["styles.css"]
+  }],
+  "action" : { "default_popup" : "popup.html" },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
