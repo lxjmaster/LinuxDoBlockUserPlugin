@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "Linux.do User Blocker",
   "version": "1.0",
+  "description": "Block some user of linux.do",
   "permissions": ["storage", "activeTab", "scripting"],
   "content_scripts": [{
     "matches": ["https://linux.do/*"],
